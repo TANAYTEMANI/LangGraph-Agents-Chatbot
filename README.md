@@ -60,3 +60,10 @@ pip install -r requirements.txt
 ```bash
 streamlit run app.py
 ```
+
+
+📊 LangSmith Evaluation
+Screenshots from LangSmith evaluating LLM responses are available in the docs/ directory.
+
+🎥 A Loom video explaining LangSmith results and code walkthrough is also included.
+(https://www.loom.com/share/a286933d4f794f2e9582ebf866b0fdf3?sid=42d09389-dff6-4940-a440-5d6dd3e6cedc)
