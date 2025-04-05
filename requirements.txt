@@ -1,0 +1,33 @@
+# Core LangChain packages
+langchain
+langchain-core
+langchain-community
+langchain-openai
+langchain-groq
+langgraph
+
+# For handling environment variables
+python-dotenv
+
+# Vector store and embedding models
+faiss-cpu  # or faiss-gpu if you're using GPU
+sentence-transformers  # for HuggingFaceEmbeddings
+
+# PDF loading
+pypdf
+
+# Streamlit for UI
+streamlit
+
+# Pydantic for data modeling
+pydantic
+
+# YAML support
+pyyaml
+
+# Logging and temporary files (standard library)
+# uuid, logging, tempfile, os, datetime – no need to include in requirements.txt
+
+# Optional: If you're using Azure's OpenAI with langchain-openai
+azure-core
+openai
