@@ -40,3 +40,23 @@ This project demonstrates how to combine multiple tools — LangChain, LangGraph
 ```bash
 git clone https://github.com/your-username/langgraph-weather-pdf-chatbot.git
 cd langgraph-weather-pdf-chatbot
+```
+
+2. **Create & Activate Virtual Environment**
+
+```bash
+python -m venv venv
+source venv/bin/activate  # or venv\Scripts\activate on Windows
+```
+
+3. **Install Dependencies**
+
+```bash
+pip install -r requirements.txt
+```
+
+4. **Run the Application**
+
+```bash
+streamlit run app.py
+```
