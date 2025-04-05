@@ -12,18 +12,6 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-
-# llm = ChatGroq(
-#     api_key=os.getenv("GROQ_KEY"),  # or use os.environ["GROQ_API_KEY"]
-#     model_name="llama-3.3-70b-versatile",  # Or any other Groq-supported model
-# )
-
-# os.environ["AZURE_OPENAI_API_KEY"] = "331b74aa95dc4614ba1d3d0833c6d1b3"
-# os.environ["AZURE_OPENAI_ENDPOINT"] = "https://h3251433-ai.openai.azure.com/"
-
- 
-
-
 def handle_tool_error(state) -> dict:
     error = state.get("error")
     tool_calls = state["messages"][-1].tool_calls
@@ -84,5 +72,10 @@ llm = AzureChatOpenAI(
     max_tokens=None,
     timeout=None,
     max_retries=2,
-    callbacks = [tracer]
+    callbacks=[tracer],
 )
+
+# llm = ChatGroq(
+#     api_key=os.getenv("GROQ_KEY"),  # or use os.environ["GROQ_API_KEY"]
+#     model_name="llama-3.3-70b-versatile",  # Or any other Groq-supported model
+# )
