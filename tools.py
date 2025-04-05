@@ -9,10 +9,6 @@ from langchain_core.prompts import MessagesPlaceholder
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnableConfig
-
-# from app import vector_store
-import streamlit as st
-
 import requests
 
 llm = utility.llm
@@ -21,9 +17,6 @@ load_dotenv()
 
 with open("config.yaml", "r", encoding="utf-8") as file:
     config_yml = yaml.safe_load(file)
-
-# vector_store = st.session_state.get("vector_store", None)
-# print("**************", vector_store)
 
 question_chat_prompt = config_yml["prompt"]["contextualize"]
 contextualize_q_prompt = ChatPromptTemplate.from_messages(
